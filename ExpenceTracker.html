@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            background-color: rgb(249, 234, 234);
+            border-radius: 4px;
+        }
+        button {
+            background-color: rgb(181, 204, 235);
+            border-radius: 4px;
+            font-weight: 900;
+        }
+        .expenseTracker{
+            background-color: bisque;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" onsubmit="saveToLocalStorage(event)">
+        <div class="expenseTracker mb-3">
+            <span class="input-group-text" id="basic-addon2"><b>Choose Expense Amount</b> : </span>
+            <input type="text" class="form-control" id="amount" aria-describedby="basic-addon3">
+
+            <span class="input-group-text" id="basic-addon3"><b>Choose description :</b> </span>
+            <input type="text" class="form-control" id="description" aria-describedby="basic-addon3">
+
+            <span class="input-group-text"><b>Choose a catagory :</b> </span>
+            <input type="text" class="form-control" id="catagory" aria-describedby="basic-addon3">
+            <button id="btn" onsubmit="">Add Expense </button>
+        </div>
+    </form>
+    <script src="ExpenseTracker.js"></script>
+
+</body>
+
+</html>
