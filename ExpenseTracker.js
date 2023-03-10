@@ -13,6 +13,7 @@ function saveToLocalStorage(event) {
         catagory
     };
 
+    
     localStorage.setItem(obj.catagory, JSON.stringify(obj));
     showUserOnScreen(obj)
 }
